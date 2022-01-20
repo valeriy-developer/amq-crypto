@@ -1,14 +1,28 @@
 .container {
-  padding-left: size(120, 20);
-  padding-right: size(120, 20);
-  width: 100%;
-  position: relative;
+    padding-left: size(120, 20);
+    padding-right: size(120, 20);
+    width: 100%;
+    position: relative;
 }
 
-@mixin col($start, $end) {
-  grid-column: #{$start}/#{$end + 1};
+.img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@mixin row($start, $end) {
-  grid-row: #{$start}/#{$end + 1};
+.section {
+    margin-top: size(300, 120);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+
+    @media (max-width: $br4) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

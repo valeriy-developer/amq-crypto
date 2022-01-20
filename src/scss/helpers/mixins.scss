@@ -1,44 +1,73 @@
 @mixin cover {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 @mixin coverdiv($pos) {
-  position: $pos;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: $pos;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @mixin vcenter($pos) {
-  position: $pos;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: $pos;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @mixin center($axis) {
-  @if $axis == both {
-    @include vcenter;
-  } @else if $axis == h {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  } @else if $axis == v {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+    @if $axis==both {
+        @include vcenter;
+    }
+
+    @else if $axis==h {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @else if $axis==v {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 @mixin font($font_name, $file_name, $weight, $style) {
-  @font-face {
-    font-family: $font_name;
-    font-display: swap;
-    src: url('../fonts/#{$file_name}.woff2') format('woff2');
-    font-weight: #{$weight};
-    font-style: #{$style};
-  }
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url('../fonts/#{$file_name}.woff2') format('woff2');
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin col-s($value) {
+    grid-column-start: $value;
+}
+
+@mixin col-end($value) {
+    grid-column-end: $value + 1;
+}
+
+@mixin row-s($value) {
+    grid-row-start: $value;
+}
+
+@mixin row-end($value) {
+    grid-row-end: $value + 1;
+}
+
+
+@mixin col($start, $end) {
+    grid-column: #{$start}/#{$end + 1};
+}
+
+@mixin row($start, $end) {
+    grid-row: #{$start}/#{$end + 1};
 }
