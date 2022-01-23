@@ -1,0 +1,131 @@
+.header {
+    background-color: var(--black);
+    color: var(--bg);
+}
+
+.header__content {
+    padding-top: size(33, 20);
+    padding-bottom: size(33, 20);
+    font-size: vw(18);
+    line-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    width: 100%;
+}
+
+.header__language {
+    @media (max-width: $br1) {
+        font-size: 18px;
+    }
+}
+
+.header__menu {
+    display: flex;
+    @include col(6, 11);
+
+    @media (max-width: $br1) {
+        display: none;
+    }
+}
+
+.header__item {
+    margin-right: vw(62);
+
+    &:nth-child(4) {
+        margin-right: 0;
+    }
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+
+    @media (max-width: $br1) {
+        display: none;
+    }
+}
+
+.login {
+    border-bottom: 2px solid currentColor;
+}
+
+.header__arrow-right {
+    margin-left: vw(14);
+}
+
+.header__info:after {    
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--bg);
+    transform: scaleX(0);
+    transition: transform .3s ease;
+}
+
+.header__info { 
+    &:hover:after{
+        transform: scaleX(1);
+    }
+}
+
+// ==================================burger-menu==================================
+
+.header__burger {
+    position: relative;
+    height: 16px;
+    width: 26px;
+    cursor: pointer;
+    margin-left: 16px;
+    background-color: transparent;
+    display: none;
+    @include col(12, 12);
+    justify-self: end;
+
+    @media (max-width: $br1) {
+        display: block;
+    }
+
+    @media (max-width: $br4) {
+        @include col(4, 4);
+    }
+}
+
+.header__bar {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg);
+    left: 0;
+    transition: .3s all linear;
+}
+
+.header__bar-first {
+    top: 0;
+}
+
+.header__bar-second, .header__bar-third {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__bar-fourth {
+    bottom: 0;
+}
+
+.header__burger-active .header__bar-first, .header__burger-active .header__bar-fourth {
+    opacity: 0;
+}
+
+.header__burger-active .header__bar-second {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.header__burger-active .header__bar-third {
+    transform: translateY(-50%) rotate(-45deg);
+}

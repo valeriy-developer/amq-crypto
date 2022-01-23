@@ -47,23 +47,6 @@
     }
 }
 
-@mixin col-s($value) {
-    grid-column-start: $value;
-}
-
-@mixin col-end($value) {
-    grid-column-end: $value + 1;
-}
-
-@mixin row-s($value) {
-    grid-row-start: $value;
-}
-
-@mixin row-end($value) {
-    grid-row-end: $value + 1;
-}
-
-
 @mixin col($start, $end) {
     grid-column: #{$start}/#{$end + 1};
 }
