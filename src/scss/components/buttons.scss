@@ -1,0 +1,15 @@
+.arrow-button {
+    display: flex;
+    font-size: vw(18);
+    line-height: 100%;
+    align-items: center;
+
+    & > .text-button {
+        border-bottom: 1px solid currentColor;
+        margin-right: 14px;
+    }
+
+    @media (max-width: $br1) {
+        font-size: 16px;
+    }
+}

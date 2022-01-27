@@ -4,3 +4,8 @@ body {
     @include reg;
     line-height: 100%;
 }
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
