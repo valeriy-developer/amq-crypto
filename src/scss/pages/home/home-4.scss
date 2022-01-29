@@ -1,0 +1,124 @@
+.home-4 {
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+.home-4__title {
+    margin-bottom: vw(72);
+}
+
+.home-4__big-text {
+    font-size: vw(120);
+    line-height: 1em;  
+    text-transform: uppercase;
+    @include col(6, 12);
+
+    @media (max-width: $br1) {
+        @include col(1, 8);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 3);
+    }
+}
+
+.home-4__card {
+    @include row(2, 2);
+    padding: vw(32) vw(32) vw(24);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    &:first-of-type {
+        @include col(1, 4);
+    }
+
+    &:nth-of-type(2) {
+        @include col(5, 8);
+    }
+
+    &:nth-of-type(3) {
+        @include col(9, 12);
+    }
+
+    @media (max-width: $br1) {
+        margin-bottom: 24px;
+        padding: 16px 12px 24px;
+
+        &:first-of-type {
+            @include row(2, 2);
+            @include col(1, 12);
+        }
+    
+        &:nth-of-type(2) {
+            @include row(3, 3);
+            @include col(1, 12);
+        }
+    
+        &:nth-of-type(3) {
+            @include row(4, 4);
+            @include col(1, 12);
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: $br4) {
+        &:first-of-type {
+            @include col(1, 4);
+        }
+    
+        &:nth-of-type(2) {
+            @include col(1, 4);
+        }
+    
+        &:nth-of-type(3) {
+            @include col(1, 4);
+        }
+    }
+}
+
+.home-4__card-text {
+    font-size: vw(28);
+    line-height: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: vw(20);
+
+    @media (max-width: $br1) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.home-4__card-desc {
+    font-size: vw(16);
+    line-height: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: vw(20);
+
+    @media (max-width: $br1) {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+.home-4__btns {
+    margin-bottom: vw(40);
+
+    @media (max-width: $br1) {
+        margin-bottom: 20px;
+    }
+}
+
+.home-4__icon-wrapper {
+    height: auto;
+    width: 100%;
+}
+
+.home-4__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}

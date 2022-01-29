@@ -5,10 +5,6 @@
     position: relative;
 }
 
-.section {
-    margin-top: size(300, 120);
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

@@ -1,13 +1,20 @@
 .hero {
     background-color: var(--black);
     color: var(--bg);
+    margin-top: 0;
+    min-height: 100vh;
 }
 
 .hero__top {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding-top: vw(84);
     padding-bottom: vw(178);
+
+    @media (max-width: $br1) {
+        padding-top: 54px;
+        padding-bottom: 52px;
+    }
 
     @media (max-width: $br3) {
         flex-direction: column;
@@ -64,6 +71,16 @@
     @media (max-width: $br3) {
         @include col(1, 9);
     }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.hero__bottom {
+    @media (max-width: $br1) {
+        padding-bottom: 60px;
+    }
 }
 
 .upper-text {
@@ -74,11 +91,16 @@
 
     @media (max-width: $br1) {
         font-size: 14px;
+        margin-bottom: 52px;
     }
 }
 
 .hero__button {
     margin-bottom: vw(16);
+
+    @media (max-width: $br1) {
+        margin-bottom: 12px;
+    }
 
     &:nth-child(2) {
         margin-bottom: 0;
@@ -88,15 +110,30 @@
 .hero__man {
     @include col(11, 12);
     justify-self: end;
+
+    @media (max-width: $br3) {
+        @include col(1, 12);
+        justify-self: center;
+        margin-top: 56px;
+        max-height: 355px;
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
 }
 
 .hero__scroll-down {
     display: flex;
     align-items: center;
-    font-size: vw(16);
+    font-size: vw(14);
     position: relative;
     bottom: 14px;
-    width: vw(200);
+    max-width: vw(250);
+
+    @media (max-width: $br1) {
+        display: none;
+    }
 }
 
 .hero__scroll-text {

@@ -1,0 +1,136 @@
+.home-7 {
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+.home-7__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 12px;
+}
+
+.home-7__title {
+    font-size: vw(120);
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+    position: relative;
+    top: vw(15);
+    max-width: vw(830);
+
+    @media (max-width: $br1) {
+        font-size: 48px;
+        max-width: 100%;
+    }
+}
+
+.home-7__button {
+    @media (max-width: $br1) {
+        display: none;
+    }
+}
+
+.home-7__line {
+    background-color: var(--black);
+    height: 2px;
+    width: 100%;
+}
+
+.home-7__bottom {
+    margin-top: vw(40);
+
+    @media (max-width: $br1) {
+        margin-top: 36px;
+    }
+}
+
+.home-7__card-pink {
+    @include col(1, 3);
+    color: var(--black);
+    background-color: #C7B0B0;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: vw(70) vw(24);
+
+    @media (max-width: $br1) {
+        @include col(1, 6);
+        padding: 32px 12px;
+    }
+
+    @media (max-width: $br3) {
+        @include col(1, 12);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.home-7__card-img {
+    @include col(4, 9);
+
+    @media (max-width: $br1) {
+        display: none;
+    }
+
+    @media (max-width: $br3) {
+        @include row(2, 2);
+        @include col(1, 12);
+        display: block;
+        margin-top: 20px;
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.home-7__card-dark {
+    @include col(10, 12);
+    color: var(--bg);
+    background-color: var(--black);
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: vw(70) vw(24);
+
+    @media (max-width: $br1) {
+        @include col(7, 12);
+        padding: 32px 12px;
+    }
+
+    @media (max-width: $br3) {
+        @include row(3, 3);
+        @include col(1, 12);
+        margin-top: 20px;
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.desc-text {
+    font-size: vw(36);
+    line-height: 1.1em;
+    text-indent: vw(144);
+
+    @media (max-width: $br1) {
+        font-size: 24px;
+        text-indent: 0;
+    }
+}
+
+.home-7__img {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
