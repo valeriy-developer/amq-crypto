@@ -8,7 +8,7 @@
     text-transform: uppercase;
 
     @media (max-width: $br1) {
-        display: flex;
+        display: inline-block;
         flex-direction: column;
         margin-bottom: 34px;
     }
@@ -90,7 +90,7 @@
         font-size: 28px;
     }
 
-    @media (max-width: $br3) {
+    @media (max-width: $br2) {
         @include col(1, 12);
         margin-bottom: 12px;
     }
@@ -109,9 +109,12 @@
         font-size: 14px;
     }
 
+    @media (max-width: $br2) {
+        @include col(1, 12);
+    }
+
     @media (max-width: $br3) {
         @include row(2, 2);
-        @include col(1, 12);
     }
 
     @media (max-width: $br4) {

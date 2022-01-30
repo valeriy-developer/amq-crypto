@@ -1,6 +1,9 @@
 .header {
     background-color: var(--black);
     color: var(--bg);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 
 .header__content {
@@ -13,6 +16,7 @@
 
     @media (max-width: $br4) {
         padding-top: 20px;
+        padding-bottom: 18px;
     }
 }
 

@@ -692,6 +692,7 @@
                 <label for="name" class="label form__label">
                   <span>Name</span>
                 </label>
+                <small class="form__input-error">Error</small>
               </div>
               <div class="input-wrapper form__input-wrapper">
                 <input id="email" name="Email" class="input form__input" type="email" required
@@ -703,20 +704,19 @@
                 <small class="form__input-error">Incorrect email</small>
               </div>
               <div class="input-wrapper form__input-wrapper">
-                <textarea id="questions" name="Questions" class="input form__input"></textarea>
+                <textarea id="questions" name="Questions" class="input form__input form__input--2" rows="1"></textarea>
                 <label for="questions" class="label form__label">
                   <span>Questions</span>
                 </label>
               </div>
             </div>
-            <div class="footer__btn">
-              <button type="submit" class="button">
-                <svg class="footer__btn-img" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.898474 10.1015H21.1015M21.1015 10.1015L12.1224 1.12239M21.1015 10.1015L12.1224 19.0807"
-                    stroke="white" stroke-width="2" />
-                </svg>
-              </button>
-            </div>
+            <button type="submit" class="button footer__btn">
+              <svg class="footer__btn-img" width="23" height="20" viewBox="0 0 23 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.898474 10.1015H21.1015M21.1015 10.1015L12.1224 1.12239M21.1015 10.1015L12.1224 19.0807"
+                  stroke="white" stroke-width="2" />
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -735,9 +735,9 @@
     </div>
   </footer>
   <!-- BEGIN scripts -->
-    <script src="./js/runtime-app.js"></script> 
-    <script src="./js/app.js"></script>
-    <!-- END scripts -->
+  <script src="./js/runtime-app.js"></script>
+  <script src="./js/app.js"></script>
+  <!-- END scripts -->
 </body>
 
 </html>

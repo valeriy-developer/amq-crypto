@@ -49,19 +49,36 @@
         padding: 16px 12px 24px;
 
         &:first-of-type {
+            @include row(1, 1);
+            @include col(1, 6);
+        }
+    
+        &:nth-of-type(2) {
+            @include row(1, 1);
+            @include col(7, 12);
+        }
+    
+        &:nth-of-type(3) {
             @include row(2, 2);
+            @include col(3, 10);
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: $br3) {
+        &:first-of-type {
+            @include row(1, 1);
             @include col(1, 12);
         }
     
         &:nth-of-type(2) {
-            @include row(3, 3);
+            @include row(2, 2);
             @include col(1, 12);
         }
     
         &:nth-of-type(3) {
-            @include row(4, 4);
+            @include row(3, 3);
             @include col(1, 12);
-            margin-bottom: 0;
         }
     }
 

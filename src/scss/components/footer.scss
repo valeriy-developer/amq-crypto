@@ -199,6 +199,14 @@
 textarea {
     border: none;
     resize: none;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+
+    @media (max-width: $br1) {
+        display: block;
+    }
 }
 
 .input {
@@ -234,7 +242,7 @@ textarea {
     opacity: 0;
     visibility: hidden;
     transition: opacity, visibility;
-    transition-duration: 0.3;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
     margin-top: 4px;
     display: block;
@@ -259,10 +267,12 @@ abbr {
     align-items: center;
     border: 2px solid var(--bg);
     padding: vw(15);
-    overflow: hidden;
 
     @media (max-width: $br1) {
         margin-top: 36px;
+        width: 50px;
+        height: 50px;
+        padding: 15px;
     }
 }
 
@@ -295,6 +305,7 @@ abbr {
 }
 
 .footer__by-emotion {
+    display: block;
     @include col(4, 7);
     @include row(1, 1);
     font-size: 14px;
@@ -321,7 +332,7 @@ abbr {
     @media (max-width: $br3) {
         margin-top: 24px;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 24px;
         grid-row-gap: 8px;
         width: fit-content;
@@ -338,7 +349,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: #fff;
-  box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.01) inset;
-  transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff;
+    box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.01) inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
