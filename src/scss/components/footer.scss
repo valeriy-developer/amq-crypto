@@ -3,11 +3,9 @@
     color: var(--bg);
     padding-top: vw(120);
     padding-bottom: vw(35);
-    margin-top: vw(300);
 
     @media (max-width: $br1) {
         padding-top: 52px;
-        margin-top: 170px;
     }
 }
 

@@ -1,14 +1,13 @@
-.home-8 {
-    background-color: var(--bg);
-    color: var(--black);
-    margin-bottom: vw(300);
+.about-2 {
+    margin-top: 0;
+    padding-top: vw(165);
 
     @media (max-width: $br1) {
-        margin-bottom: 170px;
+        padding-top: 56px;
     }
 }
 
-.home-8__title {
+.about-2__title {
     margin-bottom: vw(106);
 
     @media (max-width: $br3) {
@@ -16,8 +15,8 @@
     }
 }
 
-.home-8__block-badge {
-    @include col(1, 5);
+.about-2__block-badge {
+    @include col(1, 3);
     @include row(1, 1);
     display: flex;
     justify-content: center;
@@ -44,7 +43,7 @@
     }
 }
 
-.home-8__big-text {
+.about-2__big-text {
     @include col(1, 12);
     @include row(1, 1);
     position: relative;
@@ -54,7 +53,6 @@
 
     @media (max-width: $br1) {
         font-size: size(72, 24);
-        line-height: 1.1em;
     }
 
     @media (max-width: $br3) {
