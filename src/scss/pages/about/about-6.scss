@@ -20,6 +20,7 @@
 }
 
 .about-6__h2-text {
+    width: 101%;
     font-size: vw(120);
     font-weight: 400;
     line-height: 1em;
@@ -83,7 +84,7 @@
     
         &:nth-of-type(3) {
             @include row(2, 2);
-            @include col(3, 10);
+            @include col(1, 6);
             margin-top: 24px;
         }
     }

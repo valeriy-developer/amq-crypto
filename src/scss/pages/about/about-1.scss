@@ -2,7 +2,7 @@
     background-color: var(--black);
     color: var(--bg);
     margin-top: 0;
-    padding-top: vw(100);
+    padding-top: vw(212);
     padding-bottom: vw(206);
     height: 100vh;
 
@@ -41,6 +41,10 @@
     display: block;
     text-align: center;
     width: 100%;
+
+    @media (max-width: $br1) {
+        text-align: left;
+    }
 }
 
 .about-1__text-desc {
@@ -104,11 +108,3 @@
         grid-gap: 16px;
     }
 }
-
-.about-1__button {}
-
-.text-button {}
-
-.about-1__text {}
-
-.about-1__arrow {}
