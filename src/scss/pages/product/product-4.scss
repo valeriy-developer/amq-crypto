@@ -1,0 +1,160 @@
+.product-4 {
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+.product-4__title {
+    margin-bottom: 16px;
+}
+
+.product-4__big-text {
+    font-size: vw(120);
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+
+    @media (max-width: $br1) {
+        font-size: 48px;
+    }
+
+    @media (max-width: $br4) {
+        font-size: vw(260);
+    }
+}
+
+.product-4__line {
+    background-color: var(--black);
+    height: 2px;
+    width: 100%;
+}
+
+.product-4__text {
+    margin-top: vw(72);
+    margin-bottom: vw(72);
+
+    @media (max-width: $br1) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.product-4__indent-text {
+    @include col(6, 11);
+    font-size: vw(36);
+    line-height: 1.1em;
+    text-indent: vw(144);
+
+    @media (max-width: $br1) {
+        text-indent: 0;
+        font-size: 24px;
+        line-height: 1.2em;
+    }
+
+    @media (max-width: $br2) {
+        @include col(4, 11);
+    }
+
+    @media (max-width: $br3) {
+        @include col(1, 11);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.product-4__container {
+    @media (max-width: $br1) {
+        padding-right: 0;
+    }
+}
+
+.table-wrapper {
+    overflow: auto;
+    background-color: var(--black);
+    border-radius: 20px;
+    padding-left: vw(42);
+    padding-right: vw(42);
+
+    @media (max-width: $br1) {
+        padding-left: 20px;
+        padding-right: 0;
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.table {
+    width: 100%;
+    overflow: hidden;
+    min-width: 960px;
+    color: var(--bg);
+
+    tr:last-child {
+        td {
+            border-bottom: unset;
+        }
+    }
+
+    td,
+    th {
+        padding: vw(42);
+        border-bottom: 2px solid var(--bg);
+
+        @media (max-width: $br1) {
+            padding: 20px;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    th {
+        text-align: left;
+        font-weight: 400;
+        line-height: 1.1em;
+        font-size: vw(24);
+        text-transform: uppercase;
+
+        @media (max-width: $br1) {
+            font-size: 14px;
+        }
+    }
+
+    td {
+        text-align: left;
+        line-height: 1.1em;
+        font-size: vw(20);
+
+        @media (max-width: $br1) {
+            font-size: 14px;
+        }
+    }
+}
+
+.product-4__btns {
+    @include col(6, 12);
+    margin-top: vw(72);
+    padding-bottom: vw(300);
+
+    @media (max-width: $br1) {
+        margin-top: 56px;
+        padding-bottom: 120px;
+    }
+
+    @media (max-width: $br2) {
+        @include col(4, 11);
+    }
+
+    @media (max-width: $br3) {
+        @include col(1, 11);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
