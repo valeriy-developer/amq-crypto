@@ -1,0 +1,57 @@
+.account-5 {
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+.account-5__title {
+    margin-bottom: 16px;
+}
+
+.account-5__big-text {
+    font-size: vw(120);
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+
+    @media (max-width: $br1) {
+        font-size: 48px;
+    }
+
+    @media (max-width: $br4) {
+        font-size: vw(220);
+    }
+}
+
+.account-5__line {
+    background-color: var(--black);
+    height: 2px;
+    width: 100%;
+    margin-bottom: vw(72);
+
+    @media (max-width: $br1) {
+        margin-bottom: 32px;
+    }
+}
+
+.account-5__btns {
+    @include col(6, 12);
+    margin-top: vw(72);
+    padding-bottom: vw(300);
+
+    @media (max-width: $br1) {
+        margin-top: 56px;
+        padding-bottom: 120px;
+    }
+
+    @media (max-width: $br2) {
+        @include col(4, 11);
+    }
+
+    @media (max-width: $br3) {
+        @include col(1, 11);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
