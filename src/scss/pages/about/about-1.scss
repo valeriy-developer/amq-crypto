@@ -3,8 +3,8 @@
     color: var(--bg);
     margin-top: 0;
     padding-top: vw(212);
-    padding-bottom: vw(206);
-    height: 100vh;
+    padding-bottom: 40px;
+    min-height: 100vh;
 
     @media (max-width: $br1) {
         padding-top: 94px;
