@@ -1,0 +1,145 @@
+.account-6 {
+    background-color: var(--black);
+    color: var(--bg);
+    padding-top: vw(120);
+    padding-bottom: vw(200);
+
+    @media (max-width: $br1) {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+}
+
+.account-6__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.account-6__wrapper-img {
+    display: none;
+}
+
+.account-6__img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.account-6__big-text {
+    font-size: vw(180);
+    line-height: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: vw(100);
+    text-align: right;
+
+    @media (max-width: $br1) {
+        font-size: 48px;
+        margin-bottom: 52px;
+    }
+
+    @media (max-width: $br3) {
+        word-break: break-word;
+        hyphens: manual;
+    }
+}
+
+.account-6__bottom {
+    @media (max-width: $br2) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.account-6__desc {
+    @include col(1, 5);
+}
+
+.account-6__upper-text {
+    font-size: vw(16);
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: vw(52);
+
+    @media (max-width: $br1) {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+}
+
+.account-6__text {
+    font-size: vw(32);
+    line-height: 1.1em;
+    font-weight: 400;
+
+    @media (max-width: $br1) {
+        font-size: 24px;
+    }
+}
+
+.account-6__items {
+    @include col(6, 12);
+
+    @media (max-width: $br2) {
+        margin-top: 52px;
+    }
+}
+
+.account-6__item {
+    +.account-6__item {
+        margin-top: vw(52);
+
+        @media (max-width: $br1) {
+            margin-top: 52px;
+        }
+    }
+}
+
+.account-6__line {
+    background-color: var(--bg);
+    height: 2px;
+    width: 100%;
+}
+
+.account-6__content {
+    display: flex;
+    margin-top: vw(26);
+
+    @media (max-width: $br1) {
+        margin-top: 16px;
+    }
+
+    @media (max-width: $br3) {
+        display: block;
+    }
+}
+
+.account-6__number {
+    font-size: vw(48);
+    line-height: 1.1em;
+    font-weight: 400;
+    flex: 1 0 44.1%;
+
+    @media (max-width: $br1) {
+        font-size: 32px;
+        flex: 1 0 20%;
+    }
+}
+
+.account-6__small-text {
+    font-size: vw(24);
+    line-height: 1.1em;
+    flex: 1 0 55.9%;
+
+    @media (max-width: $br1) {
+        font-size: 28px;
+        flex: 1 0 80%;
+    }
+
+    @media (max-width: $br3) {
+        margin-top: 12px;
+    }
+}
