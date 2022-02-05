@@ -1,0 +1,142 @@
+.platform-4 {
+    background-color: var(--black);
+    color: var(--bg);
+    padding-top: vw(120);
+    padding-bottom: vw(254);
+
+    @media (max-width: $br1) {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+}
+
+.platform-4__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.platform-4__wrapper-img {
+    @media (max-width: $br1) {
+        display: none;
+    }
+}
+
+.platform-4__img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.platform-4__big-text {
+    font-size: vw(180);
+    line-height: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+
+    @media (max-width: $br1) {
+        font-size: 48px;
+        text-align: unset;
+    }
+}
+
+.platform-4__text {
+    @include col(6, 11);
+    font-size: vw(32);
+    line-height: 1.1em;
+    text-indent: vw(144);
+    margin-top: vw(72);
+    word-break: break-word;
+
+    @media (max-width: $br1) {
+        margin-top: 52px;
+        font-size: 24px;
+        @include col(1, 11);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.platform-4__line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--bg);
+}
+
+.platform-4__content-items {
+    margin-top: vw(72);
+
+    @media (max-width: $br1) {
+        margin-top: 40px;
+    }
+}
+
+.platform-4__item+.platform-4__item {
+    margin-top: vw(72);
+
+    @media (max-width: $br1) {
+        margin-top: 32px;
+    }
+}
+
+.platform-4__content {
+    margin-top: vw(26);
+
+    @media (max-width: $br1) {
+        margin-top: 16px;
+    }
+}
+
+.platform-4__medium-text {
+    @include col(1, 4);
+    font-weight: 400;
+    font-size: vw(48);
+    line-height: 1.1em;
+
+    @media (max-width: $br1) {
+        font-size: 32px;
+    }
+
+    @media (max-width: $br3) {
+        margin-bottom: 12px;
+        @include col(1, 12);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.platform-4__desc {
+    @include col(6, 9);
+
+    @media (max-width: $br1) {
+        @include col(6, 12);
+    }
+
+    @media (max-width: $br3) {
+        @include row(2, 2);
+        @include col(1, 12);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.platform-4__about {
+    font-size: vw(18);
+    line-height: 1em;
+
+    @media (max-width: $br1) {
+        font-size: 14px;
+    }
+
+    @media (max-width: $br3) {
+        line-height: 1.2em;
+    }
+}

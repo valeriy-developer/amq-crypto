@@ -52,3 +52,102 @@
         @include col(1, 4);
     }
 }
+
+.account-8__open-item {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: vw(36);
+
+    @media (max-width: $br1) {
+        padding-bottom: 20px;
+    }
+}
+
+.account-8__line {
+    background-color: var(--black);
+    height: 2px;
+    width: 100%;
+}
+
+.account-8__line--last {
+    margin-top: vw(38);
+
+    @media (max-width: $br1) {
+        margin-top: 12px;
+    }
+}
+
+.account-8__content {
+    margin-top: vw(38);
+
+    @media (max-width: $br1) {
+        margin-top: 12px;
+    }
+}
+
+.account-8__number {
+    font-size: 32px;
+    line-height: 1em;
+
+    @media (max-width: $br4) {
+        margin-bottom: 20px;
+    }
+}
+
+.account-8__text-wrapper {
+    @include col(6, 10);
+
+    @media (max-width: $br1) {
+        @include col(4, 10);
+    }
+
+    @media (max-width: $br3) {
+        @include col(2, 10);
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+        @include row(2, 2);
+    }
+}
+
+.account-8__h5-text {
+    font-size: 28px;
+    line-height: 1em;
+    font-weight: 400;
+    margin-bottom: vw(36);
+
+    @media (max-width: $br1) {
+        margin-bottom: 20px;
+    }
+}
+
+.account-8__desc-text {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.account-8__img-wrapper {
+    @include col(12, 12);
+    width: vw(24);
+    height: vw(24);
+    justify-self: end;
+
+    @media (max-width: $br1) {
+        width: 16px;
+        height: 16px;
+    }
+
+    @media (max-width: $br4) {
+        @include col(4, 4);
+    }
+}
+
+.account-8__img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}

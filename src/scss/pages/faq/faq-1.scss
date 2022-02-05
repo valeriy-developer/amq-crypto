@@ -1,0 +1,37 @@
+.faq-1 {
+    margin-top: 0;
+    background-color: var(--black);
+    color: var(--bg);
+    min-height: 100vh;
+    display: flex;
+}
+
+.faq-1__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-1__big-text {
+    font-size: vw(164);
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @media (max-width: $br1) {
+        font-size: 44px;
+        margin-top: 24px;
+    }
+
+    @media (max-width: $br4) {
+        font-size: vw(210);
+    }
+}
+
+.faq-1__text-line {
+    display: block;
+    text-align: center;
+    width: 100%;
+}

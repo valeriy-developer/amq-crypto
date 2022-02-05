@@ -1,0 +1,9 @@
+.platform-6 {
+    margin-bottom: vw(300);
+}
+
+.platform-6__graph {
+    @media (max-width: $br1) {
+        display: none;
+    }
+}

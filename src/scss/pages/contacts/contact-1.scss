@@ -1,0 +1,94 @@
+.contact-1 {
+    background-color: var(--black);
+    color: var(--bg);
+    margin-top: 0;
+    padding-top: vw(220);
+
+    @media (max-width: $br1) {
+        padding-top: 118px;
+    }
+}
+
+.contact-1__title {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: vw(112);
+
+    @media (max-width: $br1) {
+        margin-bottom: 102px;
+    }
+}
+
+.contact-1__title-text {
+    font-size: vw(166);
+    font-weight: 400;
+    line-height: 1em;
+    text-align: right;
+    text-transform: uppercase;
+
+    @media (max-width: $br1) {
+        font-size: 52px;
+    }
+}
+
+.contact-1__items {
+    display: flex;
+    flex-direction: column;
+    gap: vw(72);
+
+    @media (max-width: $br1) {
+        gap: 32px;
+    }
+}
+
+.contact-1__line {
+    background-color: var(--bg);
+    width: 100%;
+    height: 2px;
+}
+
+.contact-1__content {
+    padding-top: vw(26);
+
+    @media (max-width: $br1) {
+        padding-top: 16px;
+    }
+}
+
+.contact-1__big-text {
+    @include col(1, 5);
+    font-size: vw(48);
+    line-height: 1.1em;
+    font-weight: 400;
+
+    @media (max-width: $br1) {
+        font-size: 32px;
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+    }
+}
+
+.contact-1__numbers {
+    @include col(6, 12);
+    font-size: 18px;
+    line-height: 1em;
+    text-decoration-line: underline;
+    display: flex;
+    flex-direction: column;
+    gap: vw(16);
+
+    @media (max-width: $br1) {
+        @include col(8, 12);
+        gap: 8px;
+    }
+
+    @media (max-width: $br4) {
+        @include col(1, 4);
+        @include row(2, 2);
+        margin-top: 12px;
+    }
+}
