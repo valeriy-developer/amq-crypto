@@ -35,7 +35,8 @@
     }
 
     @media (max-width: $br4) {
-        font-size: vw(210);
+        word-break: break-word;
+        hyphens: manual;
     }
 }
 

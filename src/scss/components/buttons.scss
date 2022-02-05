@@ -4,9 +4,19 @@
     line-height: 100%;
     align-items: center;
 
+    .arrow {
+        transition: transform .4s ease;
+        padding-left: 12px;
+    }
+
+    &:hover {
+        .arrow {
+            transform: translate(4px);
+        }
+    }
+
     >.text-button {
         border-bottom: 1px solid currentColor;
-        margin-right: 14px;
     }
 
     @media (max-width: $br1) {

@@ -16,9 +16,10 @@
     @media (max-width: $br1) {
         font-size: 48px;
     }
-
+    
     @media (max-width: $br4) {
-        font-size: vw(220);
+        word-break: break-word;
+        hyphens: manual;
     }
 }
 

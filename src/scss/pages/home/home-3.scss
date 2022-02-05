@@ -24,6 +24,11 @@
         font-size: 48px;
         max-width: 100%;
     }
+
+    @media (max-width: $br4) {
+        word-break: break-word;
+        hyphens: manual;
+    }
 }
 
 .home-3__block-badge {

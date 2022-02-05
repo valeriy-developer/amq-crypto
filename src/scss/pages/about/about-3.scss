@@ -14,6 +14,11 @@
         font-size: 48px;
         margin-bottom: 16px;
     }
+
+    @media (max-width: 320px) {
+        word-break: break-word;
+        hyphens: manual;
+    }
 }
 
 .about-3__line {

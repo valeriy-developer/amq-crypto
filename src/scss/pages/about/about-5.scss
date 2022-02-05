@@ -61,6 +61,12 @@
         font-size: 48px;
         margin-bottom: 36px;
     }
+
+    
+    @media (max-width: 320px) {
+        word-break: break-word;
+        hyphens: manual;
+    }
 }
 
 .about-5__small-text {

@@ -40,6 +40,11 @@
         font-size: 48px;
         text-align: unset;
     }
+
+    @media (max-width: $br4) {
+        word-break: break-word;
+        hyphens: manual;
+    }
 }
 
 .home-5__line {

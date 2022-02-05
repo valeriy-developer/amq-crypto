@@ -51,12 +51,19 @@
     line-height: 1em;
     text-transform: uppercase;
 
+
     @media (max-width: $br1) {
         font-size: 52px;
     }
 
     @media (max-width: $br3) {
         margin-top: 60px;
+    }
+
+    
+    @media (max-width: $br4) {
+        word-break: break-word;
+        hyphens: manual;
     }
 }
 

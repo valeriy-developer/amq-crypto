@@ -35,6 +35,11 @@
         max-width: 700px;
         margin-top: 24px;
     }
+    
+    @media (max-width: $br4) {
+        word-break: break-word;
+        hyphens: manual;
+    }
 }
 
 .about-1__text-line {

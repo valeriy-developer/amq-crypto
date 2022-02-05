@@ -40,6 +40,11 @@
         font-size: 48px;
         text-align: unset;
     }
+
+    @media (max-width: $br4) {
+        word-break: break-word;
+        hyphens: manual;
+    }
 }
 
 .platform-4__text {
@@ -48,7 +53,6 @@
     line-height: 1.1em;
     text-indent: vw(144);
     margin-top: vw(72);
-    word-break: break-word;
 
     @media (max-width: $br1) {
         margin-top: 52px;
