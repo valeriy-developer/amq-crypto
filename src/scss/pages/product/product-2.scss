@@ -24,26 +24,6 @@
     background-color: var(--black);
 }
 
-.product-2__ticker {
-    margin-top: vw(50);
-    margin-bottom: vw(50);
-
-    @media (max-width: $br1) {
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-}
-
-.product-2__ticker-text {
-    font-size: vw(180);
-    line-height: 1em;
-    text-transform: uppercase;
-
-    @media (max-width: $br1) {
-        font-size: 48px;
-    }
-}
-
 .product-2__item {
     &+.product-2__item {
         margin-top: vw(36);

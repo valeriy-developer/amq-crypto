@@ -1,0 +1,33 @@
+.ticker-wrap {
+    margin-top: vw(50);
+    margin-bottom: vw(118);
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0);
+
+    @media (max-width: $br1) {
+        margin-top: 16px;
+        margin-bottom: 36px;
+    }
+}
+
+.ticker {
+    display: flex;
+    width: fit-content;
+    line-height: 1em;
+}
+
+.ticker-item {
+    font-size: vw(180);
+    line-height: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: vw(60);
+
+    @media (max-width: $br1) {
+        margin-left: 30px;
+        font-size: 48px;
+    }
+}

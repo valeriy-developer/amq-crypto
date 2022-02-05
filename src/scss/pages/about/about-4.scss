@@ -29,26 +29,6 @@
     background-color: var(--black);
 }
 
-.about-4__ticker {
-    margin-top: vw(50);
-    margin-bottom: vw(50);
-
-    @media (max-width: $br1) {
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-}
-
-.about-4__ticker-text {
-    font-size: vw(180);
-    line-height: 1em;
-    text-transform: uppercase;
-
-    @media (max-width: $br1) {
-        font-size: 48px;
-    }
-}
-
 .about-4__content {
     margin-top: vw(50);
     margin-bottom: vw(154);

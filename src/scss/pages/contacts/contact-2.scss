@@ -379,25 +379,3 @@ select:-webkit-autofill:focus {
     height: 2px;
     background-color: var(--bg);
 }
-
-.contact-2__ticker {
-    margin-top: vw(50);
-
-    @media (max-width: $br1) {
-        margin-top: 16px;
-    }
-}
-
-.contact-2__ticker-text {
-    font-size: vw(180);
-    line-height: 1em;
-    text-transform: uppercase;
-
-    @media (max-width: $br1) {
-        font-size: 48px;
-    }
-
-    @media (max-width: $br4) {
-        font-size: vw(210);
-    }
-}
