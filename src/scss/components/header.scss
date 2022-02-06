@@ -92,6 +92,8 @@
 }
 
 .header__info {
+    text-transform: capitalize;
+
     &::after {
         content: "";
         display: block;

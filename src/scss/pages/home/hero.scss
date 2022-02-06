@@ -3,14 +3,14 @@
     color: var(--bg);
     margin-top: 0;
     min-height: 100vh;
-    padding-top: 118px;
+    padding-top: vh(118);
 }
 
 .hero__top {
     display: flex;
     justify-content: space-between;
-    padding-top: vw(84);
-    padding-bottom: vw(178);
+    padding-top: vh(68);
+    padding-bottom: vh(88);
 
     @media (max-width: $br1) {
         padding-top: 54px;
@@ -146,6 +146,16 @@
 
 .hero__scroll-text {
     margin-right: 6px;
+}
+
+.hero__arrow-down {
+    display: block;
+    width: vw(12);
+    height: vw(11);
+}
+
+.hero__man {
+    max-height: vh(475);
 }
 
 .hero__amq-man {

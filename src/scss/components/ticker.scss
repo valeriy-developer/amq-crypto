@@ -1,6 +1,6 @@
 .ticker-wrap {
     margin-top: vw(50);
-    margin-bottom: vw(118);
+    margin-bottom: vw(50);
     bottom: 0;
     width: 100%;
     overflow: hidden;
@@ -8,7 +8,7 @@
 
     @media (max-width: $br1) {
         margin-top: 16px;
-        margin-bottom: 36px;
+        margin-bottom: 16px;
     }
 }
 

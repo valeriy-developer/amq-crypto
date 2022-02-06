@@ -50,10 +50,10 @@
 
 .faq-2__switch {
     margin-top: vw(26);
-    margin-bottom: 250px;
+    margin-bottom: vw(300);
 
     @media (max-width: $br1) {
-        margin-bottom: 0;
+        margin-bottom: 120px;
         margin-top: 26px;
     }
 }
@@ -100,7 +100,7 @@
 }
 
 .faq-2__switch-btn {
-    width: fit-content;
+    text-align: left;
 }
 
 .faq-2__button {

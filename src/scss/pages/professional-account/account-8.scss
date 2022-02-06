@@ -53,6 +53,15 @@
     }
 }
 
+
+.account-8__open-block {
+    margin-bottom: vw(264);
+
+    @media (max-width: $br1) {
+        padding-bottom: 100px;
+    }
+}
+
 .account-8__open-item {
     position: relative;
     cursor: pointer;
